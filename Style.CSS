@@ -1,10 +1,10 @@
+
 .IndexBox{
     box-shadow: 0px 20px 20px rgba(0,0,0,0.5), 0 6px 6px rgba(0,0,0,0.19);
     background-color:white; 
     height: 100%;
     margin-right:auto; 
     margin-left:auto;
- 
 }
 
 #HeaderBox{
@@ -14,7 +14,21 @@
     margin-right:auto; 
     margin-left:auto;
     text-align: center;
-
 }
 
+#NavBar{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(155, 255, 238, 0.7);
+    border: 1px solid #bbb;  
+}
 
+NavBarLi{
+    font-size: 40px;
+    display: inline;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0); 
+}
