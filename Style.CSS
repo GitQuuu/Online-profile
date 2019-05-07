@@ -26,15 +26,17 @@
 }
 
 #NavBar{
-    background-color: rgba(0, 0, 0, 0);
+    z-index: 10000;
+    position: sticky;
+    top:0;
+    width: 100%;
+    background-color: rgba(221, 213, 203,1);
     list-style-type: none;
-    margin: 0;
+    margin-bottom: 0;
     padding: 0;
     overflow: hidden;
     border: 1px solid #555;
     text-align: center;
-    
- 
 }
 /* ID end*/
 
@@ -49,7 +51,7 @@ NavBarLi a{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 30px;
-    color: black;
+    color: rgb(0, 0, 0);
     
 }
 
