@@ -4,14 +4,19 @@
         <title>MoreAboutMe</title>
         <meta charset="utf-8"/>
         <meta name="description" content="CV and Info about me"/>
+        <link rel="stylesheet" href="Style.CSS"/>
     </head>
     <body>
-        <div style="background-color: black">
-            <div style="text-align: center"><a href="Index.html"><img src="/ImageLinks/Home Logo.png" style="width: 100px; height: 50px" alt="Home logo"/></a></div>
-            <!--Center header-->
-            <div style="text-align: center; color: white"><h2>About me</h2></div>
+            <div id="NavBar"> 
+                <ul>
+                     <NavBarLi><a href="Index.html">Home</a></NavbarLi>
+                     <NavBarLi><a href="MoreAboutMe.html">More About Me</a> </NavBarLi>
+                     <NavBarLi><a href="/ImageMap/ImageMapFamily.html">Image mapping</a></NavBarLi>
+                </ul>
+            </div>
+        <div style="background-color: rgb(221, 213, 203)">             
             <!--iFrame to display my application and CV-->
-            <iframe src="Ansøgning Ansøgning Qu.pdf" style="height: 900px; display: block; margin-left: auto; margin-right: auto; width: 39%" name="iFrameMe"></iframe>
+            <iframe src="Ansøgning Ansøgning Qu.pdf" style="height: 900px; display: block; margin-top:10px; margin-left: auto; margin-right: auto; width: 39%" name="iFrameMe"></iframe>
             <div style="text-align:center;"><p><a style="color:#fff !important;" href="Ansøgning Ansøgning Qu.pdf" target="iFrameMe" >Preview application</a></p></div>
             <div style="text-align:center;"><p><a style="color:#fff !important;" href="Ansøgning CV Qu.pdf" target="iFrameMe">Preview CV</a></p></div>
             <div style="text-align:center;" ><p><a style="color:#fff !important;" href="Online-profile.zip">Download Apllication and CV</a></p></div>

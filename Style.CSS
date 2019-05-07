@@ -1,12 +1,18 @@
-
+/*Class start*/
 .IndexBox{
     box-shadow: 0px 20px 20px rgba(0,0,0,0.5), 0 6px 6px rgba(0,0,0,0.19);
     background-color:white; 
-    height: 100%;
+    height: 500px;
     margin-right:auto; 
     margin-left:auto;
 }
 
+.active{
+    background-color: green;
+    color:white;
+}
+/*Class end*/
+/* ID start*/
 #HeaderBox{
     box-shadow: 0px 20px 20px rgba(155, 255, 238, 0.7), 0 6px 6px rgba(155, 255, 238, 0.7);
     background-color:rgb(155, 255, 238);
@@ -17,18 +23,29 @@
 }
 
 #NavBar{
-    text-align: center;
+    background-color: rgba(155, 255, 238, 0.7);
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(155, 255, 238, 0.7);
-    border: 1px solid #bbb;  
+    border: 1px solid #555;
+}
+/* ID end*/
+NavBarLi{
+float: left;
+
 }
 
-NavBarLi{
-    font-size: 40px;
-    display: inline;
-    border-right: 1px solid rgb(0, 0, 0);
-    border-left: 1px solid rgb(0, 0, 0); 
+NavBarLi a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
 }
+
+
+
+
