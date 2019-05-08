@@ -8,13 +8,26 @@
         <link rel="stylesheet" href="../Style.CSS"/>
     </head>
     <body>
-         <div id="NavBar" > 
-             <ul>
+        <div id="NavBar"> 
+            <ul>
                 <NavBarLi><a href="../Index.html">Home</a></NavbarLi>
-                <NavBarLi class="active"><a href="/ImageMap/ImageMapFamily.html">My family</a></NavBarLi>
-                <NavBarLi><a href="../MoreAboutMe.html">More About Me</a> </NavBarLi>
-                <NavBarLi><a href="../ContactForm.html">Contact</a></NavBarLi>
-            </ul>
+                    <div class="dropdown">
+                        <NavBarLi class="dropbtn"><a href="#">Skills</a></NavbarLi>
+                           <div class="dropdown-content">
+                               <a href="#">test</a>    
+                               <a href="#">test</a>    
+                               <a href="#">test</a>          
+                           </div>
+                    </div>
+                       <div class="dropdown">    
+                           <NavBarLi class="dropbtn active"><a href="#">About Me</a> </NavBarLi>
+                           <div class="dropdown-content">
+                               <a href="../MoreAboutMe.html">CV and Application</a>
+                               <a href="/ImageMap/ImageMapFamily.html">My family</a>
+                               <a href="../ContactForm.html">Contact</a>                   
+                           </div> 
+                       </div>       
+                </ul>
         </div>
         <!--HomeLogo-->
         <img src="/ImageMap/Familie.jpg" style="width:auto; height:auto; display: block; margin-top: 20px; margin-right: auto; margin-left: auto; " alt="Le Muldbjerg family" usemap="#family"/>

@@ -6,15 +6,27 @@
         <meta name="description" content="CV and Info about me"/>
         <link rel="stylesheet" href="Style.CSS"/>
     </head>
-    <body">
         <div id="NavBar"> 
             <ul>
-                <NavBarLi><a href="Index.html">Home</a></NavbarLi>
-                <NavBarLi><a href="/ImageMap/ImageMapFamily.html">My family</a></NavBarLi>
-                <NavBarLi class="active"><a href="MoreAboutMe.html">More About Me</a> </NavBarLi>
-                <NavBarLi><a href="ContactForm.html">Contact</a></NavBarLi>
+               <NavBarLi><a href="Index.html">Home</a></NavbarLi>
+               <div class="dropdown">
+                   <NavBarLi class="dropbtn"><a href="#">Skills</a></NavbarLi>
+                   <div style="" class="dropdown-content">
+                       <a href="#">test</a>    
+                       <a href="#">test</a>    
+                       <a href="#">test</a>          
+                   </div>
+               </div>
+               <div class="dropdown">    
+                   <NavBarLi class="dropbtn active"><a href="#">About Me</a> </NavBarLi>
+                   <div class="dropdown-content">
+                       <a href="MoreAboutMe.html">CV and Application</a>
+                       <a href="/ImageMap/ImageMapFamily.html">My family</a>
+                       <a href="ContactForm.html">Contact</a>                   
+                   </div> 
+               </div>       
              </ul>
-        </div>
+       </div>
         <div>             
             <!--iFrame to display my application and CV-->
             <iframe src="Ansøgning Ansøgning Qu.pdf" style="height: 900px; display: block; margin-top: 20px; margin-left: auto; margin-right: auto; width: 39%" name="iFrameMe"></iframe>

@@ -7,14 +7,27 @@
         <link rel="stylesheet" href="Style.CSS"/>
     </Head>
     <Body>
-        <div id="NavBar"> 
-             <ul>
-                <NavBarLi><a href="Index.html">Home</a></NavbarLi>
-                <NavBarLi><a href="/ImageMap/ImageMapFamily.html">My family</a></NavBarLi>
-                <NavBarLi><a href="MoreAboutMe.html">More About Me</a> </NavBarLi>
-                <NavBarLi class="active"><a href="ContactForm.html">Contact</a></NavBarLi>
-            </ul>
-        </div>
+            <div id="NavBar"> 
+                <ul>
+                    <NavBarLi><a href="../Index.html">Home</a></NavbarLi>
+                    <div class="dropdown">
+                        <NavBarLi class="dropbtn"><a href="#">Skills</a></NavbarLi>
+                            <div class="dropdown-content">
+                                <a href="#">test</a>    
+                                <a href="#">test</a>    
+                                <a href="#">test</a>          
+                            </div>
+                    </div>
+                        <div class="dropdown">    
+                            <NavBarLi class="dropbtn active"><a href="#">About Me</a> </NavBarLi>
+                                <div class="dropdown-content">
+                                    <a href="MoreAboutMe.html">CV and Application</a>
+                                    <a href="/ImageMap/ImageMapFamily.html">My family</a>
+                                    <a href="ContactForm.html">Contact</a>                   
+                                </div> 
+                        </div>       
+                </ul>
+            </div>
         <p style="font-size:50px; text-align: center">Under develpment</p>
         <div>
             <form style="float:left; margin-top:20px;" id="Contact" action="#" method="POST">
