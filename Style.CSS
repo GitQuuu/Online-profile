@@ -13,8 +13,8 @@
 .dropbtn {
     background-color: rgba(169, 214, 171,0);
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
   }
@@ -25,12 +25,13 @@
 }
 
 .dropdown-content{
+    left: 48%;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    padding: 30px 30px;
     z-index: 1;
 }
 
@@ -75,7 +76,7 @@
     list-style-type: none;
     margin-bottom: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: visible;
     border: 1px solid #555;
     text-align: center;
 }
