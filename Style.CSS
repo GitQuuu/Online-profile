@@ -10,6 +10,15 @@
     height: 100%;
 }
 
+.dropbtn {
+    background-color: rgba(169, 214, 171,0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
 .dropdown{
     position: relative;
     display: inline-block;    
@@ -25,8 +34,21 @@
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(155, 255, 238, 0.7)
 }
 
 .active{
@@ -70,8 +92,7 @@ NavBarLi a{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 30px;
-    color: rgb(0, 0, 0);
-    
+    color: rgb(0, 0, 0);  
 }
 
 

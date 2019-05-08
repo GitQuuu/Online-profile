@@ -8,14 +8,17 @@
         <link rel="stylesheet" href="Style.CSS"/>
     </head>
     <body>
-        <div id="NavBar"> 
+        <div id="NavBar" class="dropdown">
             <ul>
-            <NavBarLi class="active" ><a href="Index.html">Home</a></NavbarLi>
-            <NavBarLi><a href="/ImageMap/ImageMapFamily.html">My family</a></NavBarLi>
-            <NavBarLi><a href="MoreAboutMe.html">More About Me</a> </NavBarLi>
-            <NavBarLi><a href="ContactForm.html">Contact</a></NavBarLi>
-            </ul>
+                <NavBarLi class="active" ><a href="Index.html">Home</a></NavbarLi>
+                <NavBarLi class="dropbtn"><a href="MoreAboutMe.html">About Me</a> </NavBarLi>
+                <div class="dropdown-content">
+                    <a href="/ImageMap/ImageMapFamily.html">My family</a>
+                    <a href="ContactForm.html">Contact</a>                   
+                </div>        
+            </ul> 
         </div>
+        
         <div class="IndexBox">
             <div id="HeaderBox"><h1>Welcome to my online website for my Curriculum Vitae(CV)</h1></div>
             <div><br><h2>From tiles to C#</h2></div>
