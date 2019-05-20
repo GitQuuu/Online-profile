@@ -29,16 +29,21 @@
             </div>
         <p style="font-size:50px; text-align: center">Under construction</p>
         <div>
-            <form style="float:left; margin-top:20px;" id="Contact" action="/PHP/contactForm.php" method="POST" >
+            <form style="float:left; margin-top:20px;" id="Contact" action="/online-profile/PHP/contactForm.php" method="POST" target="_blank" >
                 <label for="name">Input Name:</label></br>
-                <input type="text" name="name" autofocus/></br>
-                Input Github Name:</br>
-                <input type="text" placeholder="Optional"/></br>
-                Input email:</br>
-                <input type="email"/></br>
-                Input phone number:</br>
-                <input type="number"/></br>
-                Choose sex:
+                <input type="text" name="Name" autofocus/></br>
+
+                <label for="Github">Input Github Name:</label></br>
+                <input type="text" name="Github" placeholder="Optional"/></br>
+
+                <label for="Email">Input email:</label></br>
+                <input type="email" name="Email"/></br>
+
+                <label for="Phone">Input phone number:</label></br>
+                <input type="number" name="Phone"/></br>
+
+                <!--Radio Buttons
+                    Choose sex:
                 <label for="Male">
                     <input id="Male" type="radio" name="Male/Female">Male
                 </label>
@@ -53,9 +58,10 @@
                 </label>
                 <label for="Mean">
                         <input id="Mean" type="checkbox" name="personlity">Mean
-                </label><br>
-                <textarea style="width:200px;"placeholder="Message"></textarea></br>
-                <input type="submit" value="SEND"/>
+                </label><br>-->
+
+                <textarea name="Message" style="width:200px;"placeholder="Message"></textarea></br>
+                <input type="submit" value="SEND" />
                 <input type="reset" value="RESET"/>
              </form>
         </div>
