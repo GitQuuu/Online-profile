@@ -24,6 +24,6 @@ $to      = 'nobody@example.com';
 $subject = 'the subject';
 $message = 'hello';
 
-mail($to, $subject, $message,);
+mail($to, $subject, $message);
 
 ?>
