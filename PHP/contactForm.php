@@ -11,10 +11,22 @@ echo "<br>";
 echo "Phone number:". $_POST['Phone'];
 echo "<br>";
 echo "<br>";
+echo "Message subject:". $_POST['Subject'];
+echo "<br>";
 echo "Your Message:". $_POST['Message'];
 
 echo "<br>";
 echo "<br>";
 
 echo "You can close this page";
+
+$to      = 'Quanvle@live.dk';
+$subject = 'the subject';
+$message = $_POST['Message'];
+$headers = 'From: webmaster@example.com' . "\r\n" .
+    'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($to, $subject, $message, $headers);
+
 ?>
