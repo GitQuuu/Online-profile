@@ -21,7 +21,7 @@ echo "<br>";
 echo "You can close this page";
 
 $to      = 'Quanvle@live.dk';
-$subject = 'the subject';
+$subject = $_POST['Subject'];
 $message = $_POST['Message'];
 $headers = 'From: webmaster@example.com' . "\r\n" .
     'Reply-To: webmaster@example.com' . "\r\n" .
