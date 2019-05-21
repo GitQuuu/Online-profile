@@ -1,32 +1,34 @@
 <?php
 
 $result="";
+
 if(isset($_POST['submit'])){
-    require 'PHPmailer/PHPMailerAutoload.php';
+    require 'PHPMailer/PHPMailerAutoload.php';
 
     // create a mail object
     $mail = new PHPMailer();
 
     $mail->Host='smtp.gmail.com';
-    $mail->Port='587';
+    $mail->Port=465;
+    $mail->IsSMTP();
     $mail->SMTPAuth=true;
-    $mail->SMTPSecure='tls';
-    $mail->Username='Quan0027.elev.techcollege@gmail.com';
+    $mail->SMTPSecure='ssl';
+    $mail->Username='quan0027.elev.techcollege@gmail.com';
     $mail->Password='ddn22akd';
 
     $mail->setFrom($_POST['email'],$_POST['name']);
-    $mail->addAddress('Quanvle@live.dk');
+    $mail->addAddress('quanvle@live.dk');
     $mail->addReplyTo($_POST['email'],$_POST['name']);
 
     $mail->isHTML(true);
-    $mail->Subject='From online-profile contact form'.$_POST['subject'];
-    $mail->Body='<h1 align=center>Name: '.$_POST['name'].'<br>Email: '. $_POST['email']. '<br>Message: '.$_POST['message'].'</h1>';
+    $mail->Subject='From submission'.$_POST['subject'];
+    $mail->Body='<h1 align=center>Name: '.$_POST['name'].'<br>Email: '. $_POST['email'].'<br>Phone: '. $_POST['phone'].'<br>Message: '.$_POST['message'].'</h1>';
 
     if(!$mail->send()){
         $result="Something went wrong please try again";
     }
     else{
-        $result="Thanks".$_POST['name']."for contacting me, I will get back to you soon";
+        $result="Thanks ".$_POST['name']." for contacting me, I will get back to you soon";
     }
 }
 
@@ -61,9 +63,9 @@ if(isset($_POST['submit'])){
         </div>
     </ul>
 </div>
-<h2 style="font-size:50px; text-align: center"><?= $result?> construction</h2>
+<h2 style="font-size:50px; text-align: center"><?= $result; ?></h2>
 <div>
-    <form style="float:left; margin-top:20px;" id="Contact" method="POST"  >
+    <form style="float:left; margin-top:20px;" id="Contact" method="POST" >
         <label for="name">Input Name:</label><br>
         <input type="text" name="name" autofocus/><br>
 
@@ -95,7 +97,7 @@ if(isset($_POST['submit'])){
         </label><br>-->
 
         <textarea name="message" style="width:200px;"placeholder="Message"></textarea><br>
-        <input type="submit" value="SEND" />
+        <input type="submit" name="submit" value="SEND" />
         <input type="reset" value="RESET"/>
     </form>
 </div>
