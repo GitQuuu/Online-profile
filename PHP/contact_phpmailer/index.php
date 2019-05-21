@@ -64,19 +64,13 @@ if(isset($_POST['submit'])){
     </ul>
 </div>
 <h2 style="font-size:50px; text-align: center"><?= $result; ?></h2>
-<div>
+<div >
     <form style="float:left; margin-top:20px;" id="Contact" method="POST" >
-        <label for="name">Input Name:</label><br>
-        <input type="text" name="name" autofocus/><br>
-
-        <label for="email">Input email:</label><br>
-        <input type="email" name="email"/><br>
-
-        <label for="phone">Input phone number:</label><br>
-        <input type="number" name="phone"/><br>
-
-        <label for="subject">Input subject:</label><br>
-        <input type="text" name="subject"/><br>
+        
+        <input type="text" name="name" autofocus placeholder="Input name"/><br>     
+        <input type="email" name="email" placeholder="Input your email"/><br>       
+        <input type="number" name="phone" placeholder="Input phone number"/><br>      
+        <input type="text" name="subject" placeholder="Input subject"/><br>
 
         <!--Radio Buttons
             Choose sex:
