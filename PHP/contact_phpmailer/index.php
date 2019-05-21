@@ -58,7 +58,7 @@ if(isset($_POST['submit'])){
             <div class="dropdown-content">
                 <a href="../../MoreAboutMe.html">CV and Application</a>
                 <a href="/ImageMap/ImageMapFamily.html">My family</a>
-                <a href="../../ContactForm.html">Contact</a>
+                <a href="#">Contact</a>
             </div>
         </div>
     </ul>
@@ -67,10 +67,10 @@ if(isset($_POST['submit'])){
 <div >
     <form style="float:left; margin-top:20px;" id="Contact" method="POST" >
         
-        <input type="text" name="name" autofocus placeholder="Input name"/><br>     
-        <input type="email" name="email" placeholder="Input your email"/><br>       
-        <input type="number" name="phone" placeholder="Input phone number"/><br>      
-        <input type="text" name="subject" placeholder="Input subject"/><br>
+        <input type="text" name="name" autofocus placeholder="Name"/><br>     
+        <input type="email" name="email" placeholder="@mail"/><br>       
+        <input type="number" name="phone" placeholder="Phone number"/><br>      
+        <input type="text" name="subject" placeholder="Subject"/><br>
 
         <!--Radio Buttons
             Choose sex:
