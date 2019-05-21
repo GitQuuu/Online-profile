@@ -22,13 +22,13 @@ if(isset($_POST['submit'])){
 
     $mail->isHTML(true);
     $mail->Subject='From submission'.$_POST['subject'];
-    $mail->Body='<h1 align=center>Name: '.$_POST['name'].'<br>Email: '. $_POST['email'].'<br>Phone: '. $_POST['phone'].'<br>Message: '.$_POST['message'].'</h1>';
+    $mail->Body='<h1 align=center>Name: '.$_POST['name'].'<br>Email: '. $_POST['email'].'<br>Phone: '. $_POST['phone'].'<br>Subject: '.$_POST['subject'].'<br>Message: '.$_POST['message'].'</h1>';
 
     if(!$mail->send()){
         $result="Something went wrong please try again";
     }
     else{
-        $result="Thanks ".$_POST['name']." for contacting me, I will get back to you soon";
+        $result="Thank you ".$_POST['name']." I will get back to you soon";
     }
 }
 
