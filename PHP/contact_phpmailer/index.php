@@ -64,10 +64,10 @@ if(isset($_POST['submit'])){
     </ul>
 </div>
 <h2 style="font-size:50px; text-align: center"><?= $result; ?></h2>
-<div >
+<div style="display: flex; justify-content: center;" >
     <form style="float:left;" id="Contact" method="POST" >
         
-        <input class="f-input" type="text" name="name" autofocus placeholder="Name"/><br>     
+        <input class="f-input" type="text" name="name" placeholder="Name"/><br>     
         <input class="f-input" type="email" name="email" placeholder="@mail"/><br>       
         <input class="f-input" type="number" name="phone" placeholder="Phone number"/><br>      
         <input class="f-input" type="text" name="subject" placeholder="Subject"/><br>
