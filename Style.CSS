@@ -9,6 +9,7 @@
     height: 100%;
 }
 
+/* Class for navbar start*/
 .dropbtn {
     background-color: rgba(169, 214, 171,0);
     color: white;
@@ -56,6 +57,62 @@
     font-style: italic;
     color:white;
 }
+/*Navbar class end*/
+
+.f-input::placeholder {
+    color:black;
+    opacity:0.9;
+}
+  
+.f-input {
+    background-color: transparent;
+    border:2px solid #2cbaba;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+     color:black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 4px;
+    line-height: 22px;
+    text-align:left;
+}
+  
+.f-input:focus { 
+    border:2px solid #3a3939; }
+  
+textarea {
+    height: 250px;
+    line-height: 150%;
+    resize:vertical;
+}
+  
+  .button {
+    max-width:450px;
+     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:#2cbaba;
+    border-radius:10px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+  text-align:center;
+    transition: all 0.3s;
+    font-weight:600; 
+}
+
+button:hover {
+    
+   background:#3a3939; 
+}
+
+
 /*Class end*/
 /* ID start*/
 #HeaderBox{

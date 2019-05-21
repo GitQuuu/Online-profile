@@ -65,12 +65,12 @@ if(isset($_POST['submit'])){
 </div>
 <h2 style="font-size:50px; text-align: center"><?= $result; ?></h2>
 <div >
-    <form style="float:left; margin-top:20px;" id="Contact" method="POST" >
+    <form style="float:left;" id="Contact" method="POST" >
         
-        <input type="text" name="name" autofocus placeholder="Name"/><br>     
-        <input type="email" name="email" placeholder="@mail"/><br>       
-        <input type="number" name="phone" placeholder="Phone number"/><br>      
-        <input type="text" name="subject" placeholder="Subject"/><br>
+        <input class="f-input" type="text" name="name" autofocus placeholder="Name"/><br>     
+        <input class="f-input" type="email" name="email" placeholder="@mail"/><br>       
+        <input class="f-input" type="number" name="phone" placeholder="Phone number"/><br>      
+        <input class="f-input" type="text" name="subject" placeholder="Subject"/><br>
 
         <!--Radio Buttons
             Choose sex:
@@ -90,9 +90,9 @@ if(isset($_POST['submit'])){
                 <input id="Mean" type="checkbox" name="personlity">Mean
         </label><br>-->
 
-        <textarea name="message" style="width:200px;"placeholder="Message"></textarea><br>
-        <input type="submit" name="submit" value="SEND" />
-        <input type="reset" value="RESET"/>
+        <textarea class="f-input" name="message" style="width:240px;"placeholder="Message"></textarea><br>
+        <input class="button" type="submit" name="submit" value="SEND" />
+        <input style="margin:1px;" class="button" type="reset" value="RESET"/>
     </form>
 </div>
 
