@@ -4,17 +4,34 @@
         <title>MoreAboutMe</title>
         <meta charset="utf-8"/>
         <meta name="description" content="CV and Info about me"/>
+        <link rel="stylesheet" href="Style.CSS"/>
     </head>
-    <body>
-        <div style="background-color: black">
-            <div style="text-align: center"><a href="Index.html"><img src="/ImageLinks/Home Logo.png" style="width: 100px; height: 50px" alt="Home logo"/></a></div>
-            <!--Center header-->
-            <div style="text-align: center; color: white"><h2>About me</h2></div>
+        <div id="NavBar"> 
+            <ul>
+               <NavBarLi><a href="Index.html">Home</a></NavbarLi>
+               <div class="dropdown">
+                   <NavBarLi class="dropbtn"><a href="#">Skills</a></NavbarLi>
+                   <div class="dropdown-content">
+                       <a href="SkillsHtmlCss.html">HTML/CSS</a>    
+                       <a href="SkillsCsharp.html">C#</a>             
+                   </div>
+               </div>
+               <div class="dropdown">    
+                   <NavBarLi class="dropbtn active"><a href="#">About Me</a> </NavBarLi>
+                   <div class="dropdown-content">
+                       <a href="MoreAboutMe.html">CV and Application</a>
+                       <a href="/ImageMap/ImageMapFamily.html">My family</a>
+                       <a href="/PHP/contact_phpmailer/index.php">Contact</a>                   
+                   </div> 
+               </div>       
+             </ul>
+       </div>
+        <div>             
             <!--iFrame to display my application and CV-->
-            <iframe src="Ansøgning Ansøgning Qu.pdf" style="height: 900px; display: block; margin-left: auto; margin-right: auto; width: 39%" name="iFrameMe"></iframe>
-            <div style="text-align:center;"><p><a style="color:#fff !important;" href="Ansøgning Ansøgning Qu.pdf" target="iFrameMe" >Preview application</a></p></div>
-            <div style="text-align:center;"><p><a style="color:#fff !important;" href="Ansøgning CV Qu.pdf" target="iFrameMe">Preview CV</a></p></div>
-            <div style="text-align:center;" ><p><a style="color:#fff !important;" href="Online-profile.zip">Download Apllication and CV</a></p></div>
+            <iframe src="Ansøgning Ansøgning Qu.pdf" style="height: 900px; display: block; margin-top: 20px; margin-left: auto; margin-right: auto; width: 39%" name="iFrameMe"></iframe>
+            <div style="text-align:center;"><p><a style="color:#000 !important;" href="Ansøgning Ansøgning Qu.pdf" target="iFrameMe" >Preview application</a></p></div>
+            <div style="text-align:center;"><p><a style="color:#000 !important;" href="Ansøgning CV Qu.pdf" target="iFrameMe">Preview CV</a></p></div>
+            <div style="text-align:center;" ><p><a style="color:#000 !important;" href="Online-profile.zip">Download Apllication and CV</a></p></div>
          </div>
     </body>
 </html>

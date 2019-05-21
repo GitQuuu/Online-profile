@@ -1,22 +1,158 @@
+/*Class start*/
 .IndexBox{
     box-shadow: 0px 20px 20px rgba(0,0,0,0.5), 0 6px 6px rgba(0,0,0,0.19);
     background-color:white; 
-    width: 700px;
-    height: 500px; 
     margin-right:auto; 
     margin-left:auto;
- 
+    margin-bottom: 30px;
+    width: 800px;
+    height: 100%;
 }
 
+/* Class for navbar start*/
+.dropbtn {
+    background-color: rgba(169, 214, 171,0);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+.dropdown{
+    position: relative;
+    display: inline-block;    
+}
+
+.dropdown-content{
+   
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 38px;
+    z-index: 1;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(155, 255, 238, 0.4)  
+}
+
+.active{
+    font-style: italic;
+    color:white;
+}
+/*Navbar class end*/
+
+.f-input::placeholder {
+    color:black;
+    opacity:0.9;
+}
+  
+.f-input {
+    background-color: transparent;
+    border:2px solid #2cbaba;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+     color:black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 4px;
+    line-height: 22px;
+    text-align:left;
+}
+  
+.f-input:focus { 
+    border:2px solid #3a3939; }
+  
+textarea {
+    height: 250px;
+    line-height: 150%;
+    resize:vertical;
+}
+  
+  .button {
+    max-width:450px;
+     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:#2cbaba;
+    border-radius:10px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+  text-align:center;
+    transition: all 0.3s;
+    font-weight:600; 
+}
+
+button:hover {
+    
+   background:#3a3939; 
+}
+
+
+/*Class end*/
+/* ID start*/
 #HeaderBox{
-    box-shadow: 0px 20px 20px rgba(0,0,0,0.5), 0 6px 6px rgba(0,0,0,0.19);
+    box-shadow: 0px 20px 20px rgba(155, 255, 238, 0.7), 0 6px 6px rgba(155, 255, 238, 0.7);
     background-color:rgb(155, 255, 238);
-    width: 700px;
-    height: 100px; 
+    opacity: 0.7;
     margin-right:auto; 
     margin-left:auto;
     text-align: center;
-
 }
+
+#NavBar{
+    z-index: 10000;
+    position: sticky;
+    top:0;
+    width: 100%;
+    background-color: rgba(221, 213, 203,1);
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+    overflow: visible;
+    border: 1px solid #555;
+    text-align: center;
+}
+/* ID end*/
+
+body{
+    background-color:rgb(221, 213, 203)
+}
+
+NavBarLi a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(0, 0, 0);  
+}
+
+
 
 

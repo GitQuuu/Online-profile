@@ -4,11 +4,31 @@
         <title>My family</title>
         <meta charset="utf-8"/>
         <meta name="description" content="Tekken characters"/>
+        <link rel="Stylesheet" href="../Style.CSS"/>
     </head>
     <body>
+        <div id="NavBar"> 
+            <ul>
+                <NavBarLi><a href="../Index.html">Home</a></NavbarLi>
+                    <div class="dropdown">
+                        <NavBarLi class="dropbtn"><a href="#">Skills</a></NavbarLi>
+                           <div class="dropdown-content">
+                             <a href="../SkillsHtmlCss.html">HTML/CSS</a>    
+                             <a href="../SkillsCsharp.html">C#</a>                                   
+                           </div>
+                    </div>
+                       <div class="dropdown">    
+                           <NavBarLi class="dropbtn active"><a href="#">About Me</a> </NavBarLi>
+                           <div class="dropdown-content">
+                               <a href="../MoreAboutMe.html">CV and Application</a>
+                               <a href="/ImageMap/ImageMapFamily.html">My family</a>
+                               <a href="../PHP/contact_phpmailer/index.php">Contact</a>                   
+                           </div> 
+                       </div>       
+                </ul>
+        </div>
         <!--HomeLogo-->
-        <div style="text-align: center"><a href="/Index.html"><img src="/ImageLinks/Home Logo.png" style="width:100px; height:50px;" alt="Home Logo"/></a></div>
-        <img src="/ImageMap/Familie.jpg" style="width:auto; height:auto; display: block; margin-left: auto; margin-right: auto; " alt="Le Muldbjerg family" usemap="#family"/>
+        <img src="/ImageMap/Familie.jpg" style="width:auto; height:auto; display: block; margin-top: 20px; margin-right: auto; margin-left: auto; " alt="Le Muldbjerg family" usemap="#family"/>
         <map name="family">
             <area href="Clara.html" alt="Clara Quy Kops Le" title="My daughter" shape="circle" coords="319,148,110"/>
             <area href="Qu.html" alt="Quan Alpha Hovedskov Le" title="Me" shape="circle" coords="426,411,171"/>
